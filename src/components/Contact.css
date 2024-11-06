@@ -1,0 +1,97 @@
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* צבע רקע בהxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxון */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-container {
+    background-color: rgb(209, 208, 210);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* מגבילים את הרוחב כדי להתאים למסכים רחבים */
+    text-align: center;
+  }
+  
+  .contact-header {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .contact-header {
+      font-size: 20px;
+    }
+  
+    .contact-form button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-container {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    .contact-header {
+      font-size: 18px;
+    }
+  
+    .contact-form button {
+      font-size: 12px;
+    }
+  }
+  .background {
+    height: 100vh;
+    background-image: url('../assets/backround_contact.png'); /* רקע עבור דף מחשב*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* כדי למקם את התוכן בצד ימין */
+    padding-right: 50px; /* מרווח מהקצה הימני */
+    color: #151414;
+}
+
+  

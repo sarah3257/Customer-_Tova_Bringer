@@ -1,0 +1,275 @@
+
+
+.landing-page {
+    background: url('../assets/PDF_background1.png') no-repeat center center;
+    background-size: cover;
+    color: #003366;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header-text {
+    font-size: 2em;
+    font-weight: bold;
+    color: #003366;
+    animation: scale-text 1.5s ease-in-out infinite alternate;
+  }
+  
+  .underline {
+    width: 80%;
+    height: 2px;
+    background-color: #003366;
+    margin: 10px auto;
+    animation: fade-in 1s ease-out forwards;
+  }
+  
+  .emphasis-text {
+    font-size: 3.5em;
+    color: #003366;
+    margin-top: 10px;
+    animation: zoom-in 1s ease-out forwards;
+    font-weight: bold;
+  }
+  
+  .subtext {
+    font-size: 2em;
+    margin-top: 2px;
+    color: #003366;
+    text-align: center;
+    animation: fade-in 2s ease-out forwards;
+  }
+  
+  @keyframes scale-text {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+  }
+  
+  @keyframes zoom-in {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+
+  .description {
+    position: relative;
+    top: 50px; /* משנה את המספר לפי הצורך */
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: #050506;
+    max-width: 700px;
+    text-align: center;
+    animation: typewriter 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes slide-in {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #003366; }
+  }
+  
+  
+  
+  .logo {
+    width: 110px; /* גודל מותאם של הלוגו */
+    margin-bottom: 10px;
+  }
+  
+  .center-text {
+    text-align: center;
+    color: #003366;
+  }
+  
+  .center-title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .center-subtitle {
+    font-size: 1em;
+    font-weight: normal;
+  }
+  .options-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-image {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.to-program-image {
+    width: 150px;   animation: scale-text 1.5s ease-in-out infinite alternate;
+}
+
+.background-section {
+    /* padding: 100px 20px; */
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.text_page_2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #003366;
+    animation: scale-text 1.5s ease-in-out infinite alternate;
+     
+
+}
+#background-mother {
+    background: url('../assets/background_mother.png') no-repeat center center;
+}
+
+#background-personal {
+    background: url('../assets/background_personal.png') no-repeat center center;
+}
+
+#background-constant {
+    background: url('../assets/background_constant.png') no-repeat center center;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+.strong_mam_txt{
+    font-size: 3.2em;
+    color: rgb(202, 79, 79);
+    margin-top: 10px;
+    font-weight: bold;
+}
+.strong_txt{
+    font-size: 3.2em;
+    color:  #003366;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.text_page_2_2{
+    font-size:1.2em;
+    color:  #003366;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.text_page_2_1{
+    
+    font-size: 2.5em;
+    color: #003366;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+.text_page_2_3{
+    font-size: 1.2em;
+    margin-top: 2px;
+    color: #003366;
+    text-align: center;
+    animation: fade-in 2s ease-out forwards;
+     
+}
+.options_mom{
+    width: 600px;
+    margin-bottom: 10px;
+    align-items: center;
+  padding: 30px;
+}
+/* .option-mom-path-image{ */
+    /* width: 200px; */
+/* margin-bottom: 10px;  */
+/* } */
+.options-container2{
+    display: flex;
+    justify-content: center; /* מרכז את כל האופציות במרכז המכולה */
+    gap: 20px; /* רווח בין כל אופציה */
+    flex-wrap: wrap; /* מבטיח שאם אין מקום רוחבי, התמונות יעברו לשורה הבאה */
+}
+
+.option2 {
+    display: flex;
+    gap: 10px; /* רווח בין התמונות בכל אופציה */
+  }
+  
+  .option-mom-path-image {
+    width: 200px; /* שנה את הגודל לפי הצורך */
+    padding: 40px;
+    height: auto; /* שומר על יחס רוחב-גובה */
+    object-fit: cover; /* מתאים את התמונה לגודל הנתון */
+    border-radius: 8px; /* פינות עגולות */
+    animation: scale-text 3s ease-in-out infinite alternate;
+
+  }
+  .header-text-second{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #003366;
+    animation: scale-text 1.5s ease-in-out infinite alternate;
+  }
+  .options_personal{
+    width: 600px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  
+.background-section_small {
+    padding: 100px 20px;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+    color: #003366;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background-section_small {
+    /* padding: 100px 20px; */
+    background-size: cover;
+    min-height: 50vh;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.option-personal-path-image{
+    width: 300px; /* שנה את הגודל לפי הצורך */
+    padding: 40px;
+    height: auto; /* שומר על יחס רוחב-גובה */
+    object-fit: cover; /* מתאים את התמונה לגודל הנתון */
+    border-radius: 8px; /* פינות עגולות */
+    animation: scale-text 3s ease-in-out infinite alternate;
+
+}

@@ -1,0 +1,60 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0; /* לוודא שה-footer יהיה מצומד לשמאל */
+    z-index: 1000; /* להבטיח שה-footer יופיע מעל אלמנטים אחרים */
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #ffffff; /* צבע קישורים */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    margin: 0; /* הסרת מרווחי ברירת מחדל של p */
+    font-size: 1.2em; /* גודל טקסט נוסף */
+}
+
+/* התאמה למכשירים ניידים */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px; /* הקטנת padding במסכים קטנים */
+    }
+
+    .footer-text {
+        font-size: 1em; /* הקטנת גודל טקסט במסכים קטנים */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px; /* הקטנת padding במסכים קטנים מאוד */
+    }
+
+    .footer-text {
+        font-size: 0.9em; /* הקטנת גודל טקסט במסכים קטנים מאוד */
+    }
+}
+
+.footer-text i {
+    color: #fff; /* צבע לבן לאייקונים */
+    margin: 0 5px; /* מרווח קל סביב האייקונים */
+}
+.footer-text-Start{
+    margin: 0; /* הסרת מרווחי ברירת מחדל של p */
+    font-size: 1.2em; /* גודל טקסט נוסף */
+    font-weight: bold;
+}

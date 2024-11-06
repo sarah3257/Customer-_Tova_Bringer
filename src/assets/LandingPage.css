@@ -1,0 +1,122 @@
+
+
+
+
+
+
+
+
+.landing-page {
+  background: url('../assets/PDF_background1.png') no-repeat center center;
+  background-size: cover;
+  color: #003366;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.header-text {
+  font-size: 2em;
+  font-weight: bold;
+  color: #003366;
+  animation: scale-text 1.5s ease-in-out infinite alternate;
+}
+
+.underline {
+  width: 80%;
+  height: 2px;
+  background-color: #003366;
+  margin: 10px auto;
+  animation: fade-in 1s ease-out forwards;
+}
+
+.emphasis-text {
+  font-size: 3.5em;
+  color: #003366;
+  margin-top: 10px;
+  animation: zoom-in 1s ease-out forwards;
+  font-weight: bold;
+}
+
+.subtext {
+  font-size: 2em;
+  margin-top: 2px;
+ 
+  text-align: center;
+  animation: fade-in 2s ease-out forwards;
+}
+
+@keyframes scale-text {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+@keyframes zoom-in {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+.description {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #003366;
+  max-width: 700px;
+  text-align: center;
+  animation: typewriter 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  margin-top: 20px;
+}
+
+@keyframes slide-in {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #003366; }
+}
+
+
+
+.logo {
+  width: 110px; /* גודל מותאם של הלוגו */
+  margin-bottom: 10px;
+}
+
+.center-text {
+  text-align: center;
+  color: #003366;
+}
+
+.center-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.center-subtitle {
+  font-size: 1em;
+  font-weight: normal;
+}
